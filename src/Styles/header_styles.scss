@@ -9,6 +9,7 @@
     // align-items: center;
     font-family: "Bebas Neue", sans-serif;
     // width: 100%;
+    border-bottom: 1px solid silver;
 }
 
 .header-btn-container { 
@@ -49,6 +50,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1em;
+    padding: 0.5em;
 }
 
 .header-insta-fb-links-container img { 
