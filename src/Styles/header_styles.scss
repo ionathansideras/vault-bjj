@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header-content-wrapper { 
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-image: url('../assets/hero-bg.jpg');
+    background-size: cover;
+    // height: 35vh;
+    // width: 100%;
+
+}
+
+.logo-container { 
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img { 
+    width: 14em;
+}
+
+.header-btn-container { 
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.logo-title-links-toprow-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-title-links-toprow-container h1 { 
+    font-size: 7rem;
+}
+
+.logo-title-links-toprow-container h2 { 
+    font-size: 3rem;
+}
+
+.logo-title-links-toprow-container h4 { 
+    font-size: 2rem;
+}
