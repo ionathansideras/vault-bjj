@@ -16,7 +16,7 @@ export default function TitleAndImgComponent() {
     <img src={bjjPhoto} className="bjj-img-styles"></img>
     </div>
 
-    
+
     </div>
   )
 }
