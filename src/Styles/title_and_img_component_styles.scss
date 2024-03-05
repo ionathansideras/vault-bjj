@@ -17,13 +17,27 @@
 .title-subtitle-container { 
     text-align: center;
     padding: 4em;
+    opacity: 0;
+    animation: slideIn 1.5s ease forwards;
     // padding-right: 2em;
     // margin-right: 3em;
 }
 
 .title-subtitle-container h1 { 
     font-size: 7rem;
+    // animation: slideIn 1s ease forwards;
+
 }
+
+// .title-subtitle-container h3 { 
+//     animation: slideIn 1s ease forwards;
+//     animation-delay: .5s;
+// }
+
+// .title-subtitle-container h4 { 
+//     animation: slideIn 1s ease forwards;
+//     animation-delay: 1s;
+// }
 
 .bjj-img-container { 
  display: flex;
@@ -34,7 +48,35 @@
 .bjj-img-styles { 
     width: 20em;
     border-radius: 5%;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
 }
+
+@keyframes slideIn { 
+    0% { 
+        transform: translateX(-150em);
+        opacity: 0;
+    } 
+
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes fadeIn { 
+    0% { 
+        opacity: 0;
+    }
+
+    100% { 
+        opacity: 1;
+    }
+}
+
+
 
 
 
@@ -111,7 +153,7 @@
     }
 
     .title-subtitle-container { 
-        padding: 1em;
+        padding: 0.5em;
     }
 
     .bjj-img-container { 
@@ -123,6 +165,20 @@
 
     .bjj-img-styles { 
         width: 11em;
+    }
+
+
+    .title-subtitle-container h1 { 
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+
+    .title-subtitle-container h3 { 
+        font-size: 1.2rem;
+    }
+
+    .title-subtitle-container h4 { 
+        font-size: 1.2rem;
     }
 }
 
