@@ -20,6 +20,13 @@
 
 .card-container { 
     text-align: center;
+    width: 20em;
+    padding: 1em;
+}
+
+.card-body { 
+    height: 15rem;
+    overflow: auto;
 }
 
 
