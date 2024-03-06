@@ -2,6 +2,7 @@ import Header from "./Header"
 import TitleAndImgComponent from "./TitleAndImgComponent"
 import AboutUsHomepage from "./AboutUsHomepage"
 import OurPrograms from "./OurPrograms"
+import WhatIsJiuJitsu from "./WhatIsJiuJitsu"
 
 export default function App() {
 
@@ -10,6 +11,7 @@ export default function App() {
     <Header></Header>
     <TitleAndImgComponent></TitleAndImgComponent>
     <AboutUsHomepage></AboutUsHomepage>
+    <WhatIsJiuJitsu></WhatIsJiuJitsu>
     <OurPrograms></OurPrograms>
 
     </>

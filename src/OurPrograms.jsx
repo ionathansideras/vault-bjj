@@ -17,7 +17,7 @@ export default function OurPrograms() {
         <div className='programs-card-container'>
 
         {/* <Card style={{ width: '18rem' }}> */}
-
+        <div className='card-group-1'>
         <Card className='card-container'>
 
       <div className='card-img1-container'>
@@ -46,6 +46,10 @@ export default function OurPrograms() {
       </Card.Body>
     </Card>
 
+    </div>
+
+
+    <div className='card-group-2'>
     <Card className='card-container'>
       <Card.Img variant="top" src={kidsBjjPhoto} className='program-photo' />
       <Card.Body className='card-body'>
@@ -67,6 +71,7 @@ export default function OurPrograms() {
         <Button variant="primary">Learn More</Button>
       </Card.Body>
     </Card>
+    </div>
 
     </div>
 
