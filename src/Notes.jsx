@@ -8,3 +8,7 @@
 // implement new header and welcome text section, 
 
 // buttons should be low in the screen
+
+// make the cards for the program sections!!! 4 cards, adult nogi, gi, womens and kids classes. 
+
+// with a hover class over the card that has a learn more option. 

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.our-programs-content-wrapper { 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.our-programs-header-container h1 { 
+    text-align: center;
+    font-size: 3rem;
+}
+
+.programs-card-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card-container { 
+    text-align: center;
+}
+
+
+// .card-container { 
+//     width: 18em;
+//     text-align: center;
+// }
+
+// .card-container-2 { 
+//     width: 18em;
+//     text-align: center;
+// }
+
+// .card-container-3 { 
+//     width: 18em;
+//     text-align: center;
+// }
+
+.card-img1-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
