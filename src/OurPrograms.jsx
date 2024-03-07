@@ -5,10 +5,47 @@ import nogiBjjPhoto from "../assets/g-liberty.jpg";
 import giPhoto from "../assets/hero-bg.jpg";
 import kidsBjjPhoto from "../assets/pexels-cottonbro-studio-7988827.jpg";
 import womensBjjClassPhoto from "../assets/womens-bjj-classes-vault.jpg"
+import { useEffect, useRef, useState } from 'react';
+
 
 export default function OurPrograms() {
+
+
+  const programsContentWrapper = useRef(null);
+  const [show, setShow] = useState(false);
+
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: .2,
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+          observer.disconnect();
+        }
+      });
+    }, options);
+  
+    if (programsContentWrapper.current) {
+      observer.observe(programsContentWrapper.current);
+    }
+  
+    return () => {
+      if (programsContentWrapper.current) {
+        observer.unobserve(programsContentWrapper.current);
+      }
+    };
+  }, []);
+
+
   return (
-    <div className='our-programs-content-wrapper'>
+    // <div className='our-programs-content-wrapper'>
+     <div className={`our-programs-content-wrapper ${show ? 'focused' : ''}`} ref={programsContentWrapper} >
       
         <div className='our-programs-header-container'>
             <h1>Our Programs</h1>
